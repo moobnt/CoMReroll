@@ -1,0 +1,61 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    width: 70%;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-sheet, .load-sheet, .tracking-sheet{
+    display: flex;
+    flex-direction: column;
+    transition: width 500ms;
+}
+
+.create-sheet:hover, .load-sheet:hover, .tracking-sheet:hover {
+    width: 300%;
+    cursor: pointer;
+}
+
+.create-sheet {
+    background-color: rgb(102, 121, 145);
+}
+
+.load-sheet {
+    background-color: rgb(155, 108, 108);
+}
+
+.tracking-sheet {
+    background-color: rgb(109, 138, 109);
+}
